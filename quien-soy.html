@@ -12,6 +12,9 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="dist/css/normalize.css" />
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="dist/css/style.min.css" />
     <!-- Google Fonts - Roboto Condensed -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,300&display=swap"
@@ -64,13 +67,13 @@
     <!-- CONTENIDO -->
     <main>
         <!-- SECCIONES -->
-        <div id="quien-soy" class="page">
+        <div id="page" class="page">
             <div class="container-wrap">
                 <div class="d-none">
                     <img src="dist/img/quien-soy/leucemia-mono.png" class="leucemia-mono" alt="moño leucemia" />
                 </div>
                 <!-- QUIEN SOY -->
-                <section class="quien-soy mt-0">
+                <section id="quien-soy" class="quien-soy mt-0">
                     <div class="section-title">
                         <div class="icon-title">
                             <span class="iconify bi-person" data-inline="false" data-icon="bi:person"
@@ -114,7 +117,8 @@
                                             <div class="social-icons-row flex-center">
                                                 <div class="d-flex">
                                                     <img src="dist/img/quien-soy/facebook.png"
-                                                        class="social-icons-row__icon mr-icon" alt="facebook" />
+                                                        class="social-icons-row__icon mr-icon" alt="facebook"
+                                                        width="42" />
                                                     <span class="iconify mr-icon social-icons-row__icon"
                                                         data-inline="false" data-icon="brandico:linkedin-rect"></span>
                                                     <span class="iconify mr-icon social-icons-row__icon"
@@ -133,7 +137,7 @@
                 <!-- ./QUIEN SOY -->
 
                 <!-- MI PASION -->
-                <section class="mi-pasion">
+                <section id="mi-pasion" class="mi-pasion">
                     <div class="section-title">
                         <div class="icon-title">
                             <img src="dist/img/quien-soy/star-icon.png" alt="estrella rosa"
@@ -176,7 +180,7 @@
                 <!-- ./MI PASION -->
 
                 <!-- LO QUE HAGO -->
-                <section class="lo-que-hago">
+                <section id="lo-que-hago" class="lo-que-hago">
                     <!-- Titulo -->
                     <div class="section-title">
                         <div class="icon-title">
@@ -190,6 +194,7 @@
                     <!-- Contenido -->
                     <div class="section-content">
                         <div class="container-fluid">
+                            <!-- Section Content -->
                             <div class="section-content-row row">
                                 <div class="col-12">
                                     <div class="section-content-row__text">
@@ -213,6 +218,7 @@
                                             vitae. Lobortis tellus accumsan donec quis sit elit id
                                             pellentesque in. Nam neque.
                                         </p>
+                                        <!-- Servicios -->
                                         <div class="servicios">
                                             <div class="second-container">
                                                 <!-- Diseño Web -->
@@ -225,82 +231,89 @@
                                                         </div>
                                                         <h3 class="ml-4">Diseño web</h3>
                                                     </div>
-                                            </div>
-                                            <div class="section-content pl-2">
-                                                <div class="section-content-row">
-                                                    <div class="section-content-row__text">
-                                                        <div class="section-image">
-                                                            <img src="dist/img/quien-soy/Imagen-Diseño-Web.png"
-                                                                alt="Imagen Diseño Web" class="section-image__img" />
+                                                    <div class="section-content pl-2">
+                                                        <div class="section-content-row">
+                                                            <div class="section-content-row__text">
+                                                                <div class="section-image">
+                                                                    <img src="dist/img/quien-soy/Imagen-Diseño-Web.png"
+                                                                        alt="Imagen Diseño Web"
+                                                                        class="section-image__img" />
+                                                                </div>
+                                                                <p class="section-paragraph mt-4">
+                                                                    Lorem ipsum dolor sit amet, consectetur
+                                                                    adipiscing elit. Volutpat aliquam porta
+                                                                    ipsum, adipiscing nullam. Aliquam egestas
+                                                                    magna eleifend suspendisse suspendisse. Diam
+                                                                    lobortis porttitor proin mauris quam
+                                                                    imperdiet vitae. Sollicitudin facilisi
+                                                                    phasellus nibh feugiat nisi mauris est elit.
+                                                                    Et velit ac amet fringilla turpis odio.
+                                                                    Massa urna eu eu ut enim risus. Gravida urna
+                                                                    ipsum vitae a nulla id mi faucibus. Id
+                                                                    euismod nisi, ornare ipsum porttitor proin
+                                                                    nec.
+                                                                </p>
+                                                            </div>
                                                         </div>
-                                                        <p class="section-paragraph mt-4">
-                                                            Lorem ipsum dolor sit amet, consectetur
-                                                            adipiscing elit. Volutpat aliquam porta
-                                                            ipsum, adipiscing nullam. Aliquam egestas
-                                                            magna eleifend suspendisse suspendisse. Diam
-                                                            lobortis porttitor proin mauris quam
-                                                            imperdiet vitae. Sollicitudin facilisi
-                                                            phasellus nibh feugiat nisi mauris est elit.
-                                                            Et velit ac amet fringilla turpis odio.
-                                                            Massa urna eu eu ut enim risus. Gravida urna
-                                                            ipsum vitae a nulla id mi faucibus. Id
-                                                            euismod nisi, ornare ipsum porttitor proin
-                                                            nec.
-                                                        </p>
                                                     </div>
-                                                </div>
+                                                </section>
+                                                <!-- Diseño Web -->
+                                                <!-- Desarrollo Web -->
+                                                <section class="diseno-web">
+                                                    <div class="section-title">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="icon-title d-flex align-items-center">
+                                                                <span class="iconify" data-inline="false"
+                                                                    data-icon="ant-design:code-outlined"
+                                                                    style="color: #c552ad; font-size: 48px;"></span>
+                                                                <h3 class="mx-4">Desarrollo web</h3>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="section-content pl-2">
+                                                        <div class="section-content-row">
+                                                            <div class="section-content-row__text">
+                                                                <div class="section-image">
+                                                                    <img src="dist/img/quien-soy/Imagen-Desarrollo-Web.png"
+                                                                        alt="Imagen Desarrollo Web"
+                                                                        class="section-image__img" />
+                                                                </div>
+                                                                <p class="section-paragraph mt-4">
+                                                                    Lorem ipsum dolor sit amet, consectetur
+                                                                    adipiscing elit. Volutpat aliquam porta
+                                                                    ipsum, adipiscing nullam. Aliquam egestas
+                                                                    magna eleifend suspendisse suspendisse. Diam
+                                                                    lobortis porttitor proin mauris quam
+                                                                    imperdiet vitae. Sollicitudin facilisi
+                                                                    phasellus nibh feugiat nisi mauris est elit.
+                                                                    Et velit ac amet fringilla turpis odio.
+                                                                    Massa urna eu eu ut enim risus. Gravida urna
+                                                                    ipsum vitae a nulla id mi faucibus. Id
+                                                                    euismod nisi, ornare ipsum porttitor proin
+                                                                    nec.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <!-- Desarrollo Web -->
                                             </div>
                                         </div>
+                                        <!-- Servicios -->
                                     </div>
                                 </div>
                             </div>
+                            <!-- Section Content -->
                         </div>
                     </div>
+                    <!-- ./Contenido -->
                 </section>
-                <!-- Diseño Web -->
 
-                <!-- Desarrollo Web -->
-                <section class="diseno-web">
-                    <div class="section-title">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div class="icon-title d-flex align-items-center">
-                                <span class="iconify" data-inline="false" data-icon="ant-design:code-outlined"
-                                    style="color: #c552ad; font-size: 48px;"></span>
-                                <h3 class="mx-4">Desarrollo web</h3>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="section-content pl-2">
-                        <div class="section-content-row">
-                            <div class="section-content-row__text">
-                                <div class="section-image">
-                                    <img src="dist/img/quien-soy/Imagen-Desarrollo-Web.png" alt="Imagen Desarrollo Web"
-                                        class="section-image__img" />
-                                </div>
-                                <p class="section-paragraph mt-4">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Volutpat aliquam porta
-                                    ipsum, adipiscing nullam. Aliquam egestas
-                                    magna eleifend suspendisse suspendisse. Diam
-                                    lobortis porttitor proin mauris quam
-                                    imperdiet vitae. Sollicitudin facilisi
-                                    phasellus nibh feugiat nisi mauris est elit.
-                                    Et velit ac amet fringilla turpis odio.
-                                    Massa urna eu eu ut enim risus. Gravida urna
-                                    ipsum vitae a nulla id mi faucibus. Id
-                                    euismod nisi, ornare ipsum porttitor proin
-                                    nec.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Desarrollo Web -->
                 <!-- ./LO QUE HAGO -->
 
                 <!-- ¿COMO LO HAGO? -->
-                <section class="como-lo-hago">
+                <section id="como-lo-hago" class="como-lo-hago">
                     <!-- Titulo -->
                     <div class="section-title">
                         <div class="d-flex align-items-center justify-content-between">
@@ -333,7 +346,7 @@
                                 </div>
                                 <!-- Diagrama -->
                                 <div class="second-container">
-                                    <div class="row d-flex justify-content-center mx-auto">
+                                    <div class="row mx-auto">
                                         <!-- HERRAMIENTAS DE DISEÑO -->
                                         <div class="col-md-4" data-aos="fade-in">
                                             <div class="diagram-title mt-5">
@@ -384,43 +397,11 @@
                     </div>
                 </section>
                 <!-- ./¿COMO LO HAGO? -->
-        </div>
+            </div>
         </div>
         <!-- SECCIONES -->
 
-        <!-- FOOTER BUTTONS -->
-        <div class="footer-buttons fixed-bottom d-lg-none">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-4 flex-center border-right">
-                        <a href="portafolio.html" class="flex-center flex-column">
-                            <span class="iconify mt-2 footer-buttons__iconify" data-inline="false"
-                                data-icon="bx:bx-briefcase-alt"></span>
-                            <p class="footer-buttons__text">PORTAFOLIO</p>
-                        </a>
-                    </div>
-                    <div class="col-4 flex-center flex-column border-right">
-                        <a href="blog.html" class="flex-center flex-column">
-                            <span class="iconify mt-2 footer-buttons__iconify" data-inline="false"
-                                data-icon="bi:book"></span>
-                            <p class="footer-buttons__text">BLOG</p>
-                        </a>
-                    </div>
-                    <div class="col-4 flex-center border-right">
-                        <a href="contacto.html" class="flex-center flex-column">
-                            <span class="iconify mt-2 footer-buttons__iconify" data-inline="false"
-                                data-icon="bi:pen"></span>
-                            <p class="footer-buttons__text">CONTACTO</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="boton-accion flex-center">
-                <span class="iconify" data-inline="false" data-icon="cil:phone"
-                    style="color: #ffffff; font-size: 35px;"></span>
-            </a>
-        </div>
-        <!-- FOOTER BUTTONS -->
+
 
     </main>
     <!-- ./CONTENIDO -->
@@ -433,7 +414,7 @@
         <div class="container-fluid text-center text-md-left">
 
             <!-- Grid row -->
-            <div class="row">
+            <div class="row px-5 py-3">
 
                 <!-- Grid column -->
                 <div class="col-md-6 mt-md-0 mt-3">
@@ -502,13 +483,61 @@
         <!-- Footer Links -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        <div class="copyright-developer">
+            <div class="row">
+                <div class="col-md-6 p-0">
+                    <div class="footer-copyright text-center py-3">© Derechos Reservados:
+                        <a href="https://mdbootstrap.com/"> dspdevstudio.com</a>
+                    </div>
+                </div>
+                <div class="col-md-6 p-0">
+                    <div class="footer-copyright text-center py-3">Diseñado y Desarrollado por:
+                        <a href="https://mdbootstrap.com/"> dspdevstudio.com</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Copyright -->
 
     </footer>
     <!-- ./Footer -->
+
+    <!-- FOOTER BUTTONS -->
+    <div class="footer-buttons fixed-bottom bg-dark d-lg-none">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-3 flex-center border-right">
+                    <a href="quien-soy.html" class="flex-center flex-column">
+                        <span class="iconify bi-person mt-2 footer-buttons__iconify" data-inline="false"
+                            data-icon="bi:person"></span>
+                        <p class="footer-buttons__text">QUIEN SOY</p>
+                    </a>
+                </div>
+                <div class="col-3 flex-center flex-column border-right">
+                    <a href="blog.html" class="flex-center flex-column">
+                        <span class="iconify mt-2 footer-buttons__iconify" data-inline="false"
+                            data-icon="bi:book"></span>
+                        <p class="footer-buttons__text">BLOG</p>
+                    </a>
+                </div>
+                <div class="col-3 flex-center border-right">
+                    <a href="contacto.html" class="flex-center flex-column">
+                        <span class="iconify mt-2 footer-buttons__iconify" data-inline="false"
+                            data-icon="bi:pen"></span>
+                        <p class="footer-buttons__text">CONTACTO</p>
+                    </a>
+                </div>
+                <div class="col-3 flex-center boton-accion">
+                    <a href="#" class="flex-center">
+                        <span class="iconify" data-inline="false" data-icon="cil:phone"
+                            style="color: #ffffff; font-size: 35px;"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER BUTTONS -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

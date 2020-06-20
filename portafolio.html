@@ -61,19 +61,23 @@
         </nav>
     </header>
     <main>
-        <!-- SECCIONES -->
-        <div id="portafolio" class="page">
+        <!-- SECCION -->
+        <div id="page" class="page">
             <div class="container-wrap">
                 <div class="d-none">
                     <img src="dist/img/quien-soy/leucemia-mono.png" class="leucemia-mono" alt="moño leucemia" />
                 </div>
-                <!-- QUIEN SOY -->
-                <section class="quien-soy mt-0">
-                    <div class="section-title d-flex justify-content-between align-items-center">
-                        <span class="iconify mt-3" data-inline="false" data-icon="bx:bx-briefcase-alt"
-                            style="color: #c552ad; font-size: 52px;"></span>
-                        <h2 class="mr-3">PORTAFOLIO</h2>
-                        <div class="title-line"></div>
+                <!-- PORTAFOLIO -->
+                <section id="portafolio" class="portafolio mt-0">
+                    <div class="section-title">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="icon-title d-flex align-items-center">
+                                <span class="iconify" data-inline="false" data-icon="bytesize:portfolio"
+                                    style="color: #c552ad; font-size: 50px;"></span>
+                                <h2 class="mx-4">PORTAFOLIO</h2>
+                            </div>
+                            <div class="title-line"></div>
+                        </div>
                     </div>
                     <div class="section-content">
                         <div class="container-fluid">
@@ -102,44 +106,34 @@
                             </div>
                         </div>
                     </div>
-                </section>
-                <!-- ./QUIEN SOY -->
-            </div>
-            <!-- SECCIONES -->
 
-            <!-- FOOTER BUTTONS -->
-            <div class="footer-buttons fixed-bottom d-lg-none">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-4 flex-center border-right">
-                            <a href="quien-soy.html" class="flex-center flex-column">
-                                <span class="iconify bi-person mt-2 footer-buttons__iconify" data-inline="false"
-                                    data-icon="bi:person"></span>
-                                <p class="footer-buttons__text">QUIEN SOY</p>
-                            </a>
-                        </div>
-                        <div class="col-4 flex-center flex-column border-right">
-                            <a href="blog.html" class="flex-center flex-column">
-                                <span class="iconify mt-2 footer-buttons__iconify" data-inline="false"
-                                    data-icon="bi:book"></span>
-                                <p class="footer-buttons__text">BLOG</p>
-                            </a>
-                        </div>
-                        <div class="col-4 flex-center border-right">
-                            <a href="contacto.html" class="flex-center flex-column">
-                                <span class="iconify mt-2 footer-buttons__iconify" data-inline="false"
-                                    data-icon="bi:pen"></span>
-                                <p class="footer-buttons__text">CONTACTO</p>
-                            </a>
+                    <!-- Cards -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <a href="#" class="boton-accion flex-center">
-                    <span class="iconify" data-inline="false" data-icon="cil:phone"
-                        style="color: #ffffff; font-size: 35px;"></span>
-                </a>
+                    <!-- ./Cards -->
+                </section>
+                <!-- PORTAFOLIO -->
+
             </div>
-            <!-- FOOTER BUTTONS -->
+            <!-- SECCION -->
+
 
     </main>
 
@@ -150,7 +144,7 @@
         <div class="container-fluid text-center text-md-left">
 
             <!-- Grid row -->
-            <div class="row">
+            <div class="row px-5 py-3">
 
                 <!-- Grid column -->
                 <div class="col-md-6 mt-md-0 mt-3">
@@ -162,8 +156,6 @@
                 </div>
                 <!-- Grid column -->
 
-                <hr class="clearfix w-100 d-md-none pb-3">
-
                 <!-- Grid column -->
                 <div class="col-md-3 mb-md-0 mb-3">
 
@@ -219,15 +211,64 @@
         <!-- Footer Links -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        <div class="copyright-developer">
+            <div class="row">
+                <div class="col-md-6 p-0">
+                    <div class="footer-copyright text-center py-3">Derechos Reservados:
+                        <a href="https://mdbootstrap.com/"> dspdevstudio.com</a>
+                    </div>
+                </div>
+                <div class="col-md-6 p-0">
+                    <div class="footer-copyright text-center py-3">Diseñado y Desarrollado por:
+                        <a href="https://mdbootstrap.com/"> dspdevstudio.com</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Copyright -->
 
     </footer>
     <!-- ./Footer -->
 
+    <!-- FOOTER BUTTONS -->
+    <div class="footer-buttons fixed-bottom bg-dark d-lg-none">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-3 flex-center border-right">
+                    <a href="quien-soy.html" class="flex-center flex-column">
+                        <span class="iconify bi-person mt-2 footer-buttons__iconify" data-inline="false"
+                            data-icon="bi:person"></span>
+                        <p class="footer-buttons__text">QUIEN SOY</p>
+                    </a>
+                </div>
+                <div class="col-3 flex-center flex-column border-right">
+                    <a href="blog.html" class="flex-center flex-column">
+                        <span class="iconify mt-2 footer-buttons__iconify" data-inline="false"
+                            data-icon="bi:book"></span>
+                        <p class="footer-buttons__text">BLOG</p>
+                    </a>
+                </div>
+                <div class="col-3 flex-center border-right">
+                    <a href="contacto.html" class="flex-center flex-column">
+                        <span class="iconify mt-2 footer-buttons__iconify" data-inline="false"
+                            data-icon="bi:pen"></span>
+                        <p class="footer-buttons__text">CONTACTO</p>
+                    </a>
+                </div>
+                <div class="col-3 flex-center boton-accion">
+                    <a href="#" class="flex-center">
+                        <span class="iconify" data-inline="false" data-icon="cil:phone"
+                            style="color: #ffffff; font-size: 35px;"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER BUTTONS -->
+
     <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
