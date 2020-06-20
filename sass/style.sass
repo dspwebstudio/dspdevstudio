@@ -53,23 +53,22 @@ button
     font-size: 24px
     @media screen and (min-width: 1024px)
         height: 90px
-.navbar-nav
-    display: flex
-    align-items: center
-    justify-content: center
-    margin: auto 
-    @media screen and (min-width: 1024px)
-        display: block
-        margin: 0 0 0 auto 
 
 .navbar-collapse
     width: 100%
     height: 92vh
+    display: flex
+    align-items: normal
+    justify-content: center
+    flex-direction: column
     @media screen and (min-width: 1024px)
         height: 90px
 .nav-item
-    margin: 30px 0
+    margin: 20px auto
     font-size: 22px
+    width: 120px
+    @media screen and (min-width: 1024px)
+        width: auto
 .nav-link
     font-family: Roboto Condensed
     font-style: normal
@@ -80,7 +79,6 @@ button
     align-items: center
 
 .active
-
     border-bottom: 4px solid $s-color-pink
 
 .solid
@@ -116,6 +114,11 @@ button
     background-attachment: fixed
     color: #ffffff
 .container-wrap
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    min-height: 100vh
     max-width: 1100px
     margin: auto
     padding: 120px 0 200px
@@ -125,7 +128,21 @@ section
     padding: 30px
 
 .section-title
+    width: 100%
     margin-bottom: 40px
+    display: flex
+    align-items: center
+    justify-content: start
+
+.section-content
+    width: 90%
+    margin: 0 auto
+
+.title-line
+    width: 135px
+    height: 5px
+    background-color: $s-color-pink 
+    transform: skew(35deg)
 
 .section-image__img
     width: 100%
@@ -147,6 +164,9 @@ section
 
 .section-content-row__avatar-img
     width: 200px
+
+.second-container
+    width: 75%
 
 
 
@@ -170,24 +190,17 @@ section
     display: flex
     align-items: center
     justify-content: center
-
 .footer-buttons__iconify
-    font-size: 20px
+    font-size: 25px
     color: $s-color-pink
 .footer-buttons__text
     font-size: 12px
+    color: #ffffff
 
 .font-size-icons
     font-size: 40px
 
-//botones
-.btn-purple--theme
-    padding: 10px 20px
-    border-radius: 15px
-    border: 2px solid #ffffff
-.btn-blue--theme
-    width: 175px
-    border-radius: 15px
-    border: 2px solid #ffffff
-
-
+.page-footer
+    margin-bottom: 60px
+    @media screen and (min-width: 1024px)
+        margin-bottom: 0
