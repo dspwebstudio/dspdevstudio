@@ -22,7 +22,11 @@ h1
         font-size: 48px
 h2 
     font-weight: bold
-    font-size: 32px
+    font-size: 24px
+    text-transform: uppercase
+h3 
+    font-weight: bold
+    font-size: 20px
     text-transform: uppercase
 
 p 
@@ -64,9 +68,11 @@ section
     display: flex 
     justify-content: center
     flex-direction: column
-    padding: 60px
+    padding: 45px
     @media screen and (min-width: 768px)
         padding: 90px
+    @media screen and (min-width: 1280px)
+        padding: 120px 0
 .section-title
     display: flex 
     flex-direction: row
@@ -82,6 +88,7 @@ section
 .social-icons-row__icon
     font-size: 42px
     margin-top: 42px
+    cursor: pointer
 .section-image__img
     width: 100%
 .mr-icon 
@@ -91,6 +98,14 @@ section
     text-align: center
     @media screen and (min-width: 768px)
         width: 260px
+.brands
+    font-size: 32px
+    @media screen and (min-width: 768px)
+        font-size: 50px
+.wordpress-brand
+    width: 32px
+    @media screen and (min-width: 768px)
+        width: 50px
 
 /* FOOTER */
 .copyright-developer
