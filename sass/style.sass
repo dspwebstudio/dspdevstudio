@@ -13,6 +13,13 @@ body
     color: #ffffff
     overflow-x: hidden
 
+h1 
+    font-weight: bold
+    font-size: 32px
+    text-transform: uppercase
+    // font-family: 'Roboto Condensed', 'sans-serif'
+    @media screen and (min-width: 768px)
+        font-size: 48px
 h2 
     font-weight: bold
     font-size: 32px
@@ -20,9 +27,34 @@ h2
 
 p 
     font-size: 1em
-    font-family: 'Lato', 'sans-serif'
+    // font-family: 'Lato', 'sans-serif'
     text-align: justify
     text-justify: auto
+    font-weight: 400
+    @media screen and (min-width: 768px)
+        font-size: 20px
+        letter-spacing: 2px
+
+.full-size
+    width: 100%
+    height: 100vh
+.object-fit-cover
+    object-fit: cover
+.logo 
+    width: 90px
+
+/* HERO */
+.btn
+    width: 235px
+    border-radius: 15px
+.slogan 
+    font-size: 25px
+    text-align: left
+    font-family: 'Roboto Condensed', 'sans-serif'
+    @media screen and (min-width: 768px)
+        font-size: 36px
+
+/* PAGES */
 .page 
     margin-top: 80px
 .container-wrap
@@ -33,6 +65,8 @@ section
     justify-content: center
     flex-direction: column
     padding: 60px
+    @media screen and (min-width: 768px)
+        padding: 90px
 .section-title
     display: flex 
     flex-direction: row
@@ -40,7 +74,7 @@ section
     margin-bottom: 40px
 
 .bg-dark-blue
-    background-color: $s-color-dark-blue
+    background-color: darken($s-color-dark-blue, 10%)
 .title-line
     height: 5px 
     background-color: $s-color-pink
@@ -52,7 +86,13 @@ section
     width: 100%
 .mr-icon 
     margin-right: 21px
+.section-content-row__avatar-img
+    width: 160px
+    text-align: center
+    @media screen and (min-width: 768px)
+        width: 260px
 
+/* FOOTER */
 .copyright-developer
     margin-bottom: 60px
     background-color: #0e0e0e
