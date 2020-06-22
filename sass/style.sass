@@ -37,8 +37,7 @@ p
     font-weight: 400
     @media screen and (min-width: 768px)
         font-size: 20px
-        letter-spacing: 2px
-
+        
 .full-size
     width: 100%
     height: 100vh
@@ -48,7 +47,7 @@ p
     width: 90px
 
 /* HERO */
-.btn
+.btn--purple, .btn--blue
     width: 235px
     border-radius: 15px
 .slogan 
@@ -70,10 +69,12 @@ section
     flex-direction: column
     padding: 45px
     @media screen and (min-width: 768px)
-        padding: 90px
+        padding: 75px
     @media screen and (min-width: 1280px)
-        padding: 120px 0
+        padding: 45px 0
 .section-title
+    width: 100%
+    height: 80px
     display: flex 
     flex-direction: row
     align-items: center
@@ -81,9 +82,13 @@ section
 
 .bg-dark-blue
     background-color: darken($s-color-dark-blue, 10%)
-.title-line
+
+hr.title-line
+    width: 50%
     height: 5px 
     background-color: $s-color-pink
+    transform: skew(35deg)
+    justify-content: flex-end
 
 .social-icons-row__icon
     font-size: 42px
@@ -104,8 +109,10 @@ section
         font-size: 50px
 .wordpress-brand
     width: 32px
+    height: 32px
     @media screen and (min-width: 768px)
         width: 50px
+        height: 50px
 
 /* FOOTER */
 .copyright-developer
